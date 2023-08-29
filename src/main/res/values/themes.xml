@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.ProjectAMMA" parent="Theme.AppCompat.Light">
+
+    <item name="colorPrimary">@color/background_color</item>
+    <item name="colorAccent">@color/dark_green</item>
+    <item name="android:statusBarColor"> @color/dark_green</item>
+    <item name="android:windowLightStatusBar">true</item>
+    <item name="android:itemBackground"> @color/background_lightgray_spinner_menu</item>
+
+
+
+        <item name="android:navigationBarColor"> @color/dark_green</item>
+
+
+    </style>
+</resources>

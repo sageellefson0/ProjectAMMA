@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="62dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+
+        <TextView
+            android:id="@+id/textViewAppointmentsDetailedTop"
+            android:layout_width="264dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="50dp"
+            android:text="Appointment Details"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewType"
+            android:layout_width="144dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Type"
+            android:textSize="21sp"
+            android:typeface="monospace"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViewTypeBlank"
+            app:layout_constraintTop_toBottomOf="@+id/guideline1" />
+
+        <EditText
+            android:id="@+id/textViewTypeBlank"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:hint="Type"
+            android:textSize="21sp"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewType"
+            app:layout_constraintTop_toBottomOf="@+id/guideline1"  />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="144dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:text="Description"
+            android:textSize="21sp"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toStartOf="@+id/textViewDescriptionBlank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTypeBlank" />
+
+        <EditText
+            android:id="@+id/textViewDescriptionBlank"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:hint="Description"
+            android:textSize="21sp"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewDescription"
+            app:layout_constraintTop_toBottomOf="@+id/textViewType"  />
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="144dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:text="Location"
+            android:textSize="21sp"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toStartOf="@+id/textViewLocationBlank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescriptionBlank"/>
+
+        <EditText
+            android:id="@+id/textViewLocationBlank"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:hint="Location"
+            android:textSize="21sp"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewLocation"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="144dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:text="Date"
+            android:textSize="21sp"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toStartOf="@+id/textViewDateBlank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLocationBlank"/>
+
+        <EditText
+            android:id="@+id/textViewDateBlank"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:hint="Date"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewDate"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLocation" />
+
+        <TextView
+            android:id="@+id/textViewStartTime"
+            android:layout_width="144dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:text="Start Time"
+            android:textSize="21sp"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toStartOf="@+id/textViewStartTimeBlank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDateBlank"/>
+
+        <EditText
+            android:id="@+id/textViewStartTimeBlank"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:hint="Start Time"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewStartTime"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDate"  />
+
+        <TextView
+            android:id="@+id/textViewEndTime"
+            android:layout_width="144dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:text="End Time"
+            android:textSize="21sp"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toStartOf="@+id/textViewEndTimeBlank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewStartTimeBlank" />
+
+        <EditText
+            android:id="@+id/textViewEndTimeBlank"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:hint="End Time"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewEndTime"
+            app:layout_constraintTop_toBottomOf="@+id/textViewStartTime" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.19" />
+
+        <Button
+            android:id="@+id/buttonSaveAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="588dp"
+            android:backgroundTint="@color/light_green"
+            android:padding="10dp"
+            android:text="Save Appointment Details"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerClientDropDown"
+            android:layout_width="255dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="472dp"
+            android:popupBackground="#c0c0c0"
+            android:spinnerMode="dropdown"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.974"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="99dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="472dp"
+            android:layout_marginEnd="280dp"
+            android:gravity="center_vertical"
+            android:text="Client"
+            android:textSize="21sp"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="62dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/textViewClientsDetailedTop"
+        android:layout_width="201dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="50dp"
+        android:text="Client Details"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewClientName"
+        android:layout_width="116dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Name"
+        android:textSize="21sp"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBlankName"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1" />
+
+    <EditText
+        android:id="@+id/textViewBlankName"
+        android:layout_width="139dp"
+        android:layout_height="50dp"
+        android:hint="Name"
+        android:textSize="21sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewClientName"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1" />
+
+    <TextView
+        android:id="@+id/textViewClientEmail"
+        android:layout_width="116dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:text="Email"
+        android:textSize="21sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBlankEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBlankName" />
+
+    <EditText
+        android:id="@+id/textViewBlankEmail"
+        android:layout_width="139dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:hint="Email"
+        android:textSize="21sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewClientEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewClientName" />
+
+    <TextView
+        android:id="@+id/textViewClientNumber"
+        android:layout_width="116dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:text="Number"
+        android:textSize="21sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBlankNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewClientEmail" />
+
+    <EditText
+        android:id="@+id/textViewBlankNumber"
+        android:layout_width="139dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:hint="Number"
+        android:textSize="21sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewClientNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textViewClientEmail" />
+
+    <TextView
+        android:id="@+id/textViewClientAddress"
+        android:layout_width="116dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:text="Address"
+        android:textSize="21sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBlankAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBlankNumber" />
+
+    <EditText
+        android:id="@+id/textViewBlankAddress"
+        android:layout_width="139dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:hint="Address"
+        android:textSize="21sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewClientEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewClientNumber" />
+
+    <TextView
+        android:id="@+id/textViewChanging"
+        android:layout_width="129dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textSize="21sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toStartOf="@+id/textViewChangingBlank"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBlankAddress" />
+
+    <EditText
+        android:id="@+id/textViewChangingBlank"
+        android:layout_width="139dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        android:hint=""
+        android:textSize="21sp"
+        android:typeface="monospace"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewClientNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textViewClientAddress" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <RadioGroup
+        android:id="@+id/radioButtonGroup"
+        android:layout_width="397dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="428dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonCorporateClient"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="35dp"
+            android:text="Corporate Client" />
+
+        <RadioButton
+            android:id="@+id/radioButtonIndividualClient"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="35dp"
+            android:text="Individual Client" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSaveClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:backgroundTint="@color/light_green"
+        android:padding="10dp"
+        android:text="Save Client Details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
