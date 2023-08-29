@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.example.projectamma.dao"},{"l":"com.example.projectamma.entities"}];updateSearchResults();
