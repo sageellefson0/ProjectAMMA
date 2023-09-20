@@ -38,7 +38,9 @@ Sage Ellefson - sageellefson29@gmail.com
  - Additional notification functionality 
  - Reports generated for clients
  - Updates to some GUI elements
+ - Adjust spinner dropdown length to be a fixed height
+ - Set recycler view to specify no data type rather than display empty
 
 ## Authors and acknowledgment
-Author : Sage Ellefson 
+Author: Sage Ellefson 
 
